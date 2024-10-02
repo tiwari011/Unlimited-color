@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box with Start and Stop Buttons</title>
+  
+  <style>
+    /* Centering the container with Flexbox */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Style for the box */
+    .box {
+      height: 30vh;
+      width: 20vw;
+      background-color: rgb(67, 69, 70);
+      border: 2px solid #000;
+    border-radius: 15px;
+      display: block;
+    }
+
+    /* Centering the button container and buttons */
+    .button-container {
+      text-align: center;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50; /* Green */
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button#stopBtn {
+      background-color: #f44336; /* Red */
+    }
+
+    button#stopBtn:hover {
+      background-color: #d32f2f;
+    }
+    body{
+      background-color: #092c69;
+    }
+    h1{
+
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 25px;
+      color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Box -->
+    <div class="box"></div>
+    <h1>Click on Start</h1>
+
+    <!-- Buttons -->
+    <div class="button-container">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
